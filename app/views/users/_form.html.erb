@@ -12,7 +12,12 @@
       <%= f.password_field :password, {class: "form-control"} %>
     </div>
   </div>
-  <%= render partial: 'admin', locals: {:f => f} %>
+  <div class="form-group">
+    <%= f.label :admin, {class: "col-sm-4 control-label"} %>
+    <div class="col-sm-3">
+      <%= f.check_box :admin, {checked: true}, {class: "form-control"} %>
+    </div>
+  </div>
   <div class="submit">
     <%= f.submit "Create", {class: "form-control"} %>
   </div>
