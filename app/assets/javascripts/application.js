@@ -18,7 +18,7 @@
 
 
 $(document).ready(function(){
-  $("body").toggleClass("wait");
+//  $("body").toggleClass("wait");
 });
 
 
